@@ -11,6 +11,7 @@ Aqui o atacante ao executar os comandos "ip a" e "nmap -sn 192.168.56.102/24" el
 
 Etapa 2) Observar possíveis brechas e métodos de invasão na vitima
 
-<img width="1920" height="955" alt="VirtualBox_Kali Linux_08_11_2026_18_46_00" src="https://github.com/user-attachments/assets/874f967b-c5b3-4b87-8c99-d631a6006054" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_08_11_2026_18_46_00" src="https://github.com/user-attachments/assets/a6a884a7-0132-4b0d-a630-e2c08fd46960" />
+
 
 Nessa etapa ao executar o comando "nmap -sV 192.168.56.101" o atacante analisa quais métodos de ataque ele pode realizar e cada codigo mostra a vunerabilidade e o tipo de ataque que ele pode fazer
