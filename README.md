@@ -76,3 +76,15 @@ Realizando o Ataque
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_49_53" src="https://github.com/user-attachments/assets/90a3fb0b-4058-46d6-add6-dbb67852e192" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_50_05" src="https://github.com/user-attachments/assets/974851de-b0c5-43cb-8d68-61d729d17382" />
 
+Ao utilizar o comando.
+"medusa -h 192.168.56.101  -U users.txt -P pass.txt -M http \
+-m PAGE:'/dvwa/login.php \
+-m FORM:'username=^USER^7password=^PASS^7Login=Login' \
+-m 'FAIL=Login failed -t 6"
+o Medusa testa varias combinações de usario e senha e ao recer o Login failed o medusa reconhece que aquela combinação não é a correta até achar a que esta correta.
+Nota que ao descobrir o Medusa coloca em primeiro a cobinação correta e lista as outras combinações como "Sucessfull".
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_14" src="https://github.com/user-attachments/assets/4257acf0-b5d9-4354-bc92-4d079cc4a5d2" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_32" src="https://github.com/user-attachments/assets/8e04e4db-053f-480d-ba33-9e39d2fb9e5b" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_42" src="https://github.com/user-attachments/assets/16189935-ddcc-4d34-a75b-e3448739f4bb" />
+
