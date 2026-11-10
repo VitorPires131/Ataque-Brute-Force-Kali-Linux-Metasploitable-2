@@ -56,7 +56,7 @@ Ataque Web DVWA
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_10_55" src="https://github.com/user-attachments/assets/40031a56-415b-42df-8b26-9765c02df55a" />
 
-Aqui o Atacante consegue ver informações importantes na hora de realisar o ataque como o POST e GET.
+Aqui o Atacante consegue ver informações importantes na hora de realizar o ataque como o POST e GET.
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_21_33" src="https://github.com/user-attachments/assets/184f24c6-4ea3-4ca6-b567-328c0ad7d05e" />
 
@@ -93,9 +93,46 @@ Nota que ao descobrir o Medusa coloca em primeiro a combinação correta e lista
 
 E utilizando a combinação obtida pelo medusa o Atacante consegue o acesso
 
-Nesse caso o melhor mecanismo de defesa é sempre criar senhas fortes e muda-las regurlamente e ativar o método de segundo fator
+Nesse caso o melhor mecanismo de defesa é sempre criar senhas fortes e muda-las regulamente e ativar o método de segundo fator
 
 
 
-SMB com Enumeração de Usuarios
+SMB com Enumeração de Usuários
 
+
+Enumeração de Usuários
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_53_42" src="https://github.com/user-attachments/assets/fe752af3-433b-4824-93b7-30ae353affa2" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_54_07" src="https://github.com/user-attachments/assets/617136e9-a5c7-4868-b834-97919d5d57b8" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_54_35" src="https://github.com/user-attachments/assets/ab494461-fb7b-4303-afa1-dc044464c194" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_54_49" src="https://github.com/user-attachments/assets/c2c9c4e5-ef0b-474d-8081-3054c773ac80" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_55_01" src="https://github.com/user-attachments/assets/4c634362-8a4b-4091-b4db-0f20231af6b8" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_55_47" src="https://github.com/user-attachments/assets/9c48bf6b-198e-405e-96f0-04c4ad9449e1" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_14_55_58" src="https://github.com/user-attachments/assets/d5140b71-b202-42a2-8e25-02a1ef5f1fbc" />
+
+Ao executar o comando "enum4linux -a 192.168.56.101 | tee enum4_output.txt ativa todas as técnicas possíveis de enumeração e grava a saída do comando em um arquivo.
+
+<img width="1024" height="509" alt="Sem título" src="https://github.com/user-attachments/assets/e5a961fc-963a-41f9-8327-08f5b34dcd93" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_15_11_16" src="https://github.com/user-attachments/assets/2b0de034-4970-4ee2-940e-503eee026f0c" />
+
+Aqui o Atacante consegue ler o arquivo do comando e consegue ler as informações e os nomes de possíveis vitimas para ataques
+
+
+Criando a Lista de Usuários
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_15_51_55" src="https://github.com/user-attachments/assets/3b29497a-d067-4fae-b3b5-00091fa5f066" />
+
+
+
+Realizando o Ataque
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_15_57_22" src="https://github.com/user-attachments/assets/11021643-92c7-41df-92bd-1323050d8545" />
+
+Ao executar o comando "medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50".
+O Atacante testa as combinações até achar a combinação que obteve sucesso e consegue acesso ao fazer login no sistema e o compartilhamento de Administrador do sistema.
+
+Testando o Acesso
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_16_06_41" src="https://github.com/user-attachments/assets/bf4b3407-d9fc-4b9b-892c-58affdfebf98" />
+
+e com o comando "smbclient -L //192.168.56.101 -U msf admin" e digitando a senha "msfadmin" o Atacante conseguiu com sucesso realizar o ataque, e tem livre acesso desde baixar ou fazer upload de arquivos a acessar todo o sistema.
