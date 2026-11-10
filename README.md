@@ -65,3 +65,14 @@ Criando Wordlists
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_29_55" src="https://github.com/user-attachments/assets/64f608cc-a27e-435d-b18d-1d48860374b2" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_30_36" src="https://github.com/user-attachments/assets/77ebc410-81ed-48fe-96df-8fd772be617a" />
+
+Repetindo o que ja fizemos no FTP porem agora para Ataque Web
+
+
+
+Realizando o Ataque
+
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_47_40" src="https://github.com/user-attachments/assets/1f684695-d6b4-4734-b67b-b387261030ca" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_49_53" src="https://github.com/user-attachments/assets/90a3fb0b-4058-46d6-add6-dbb67852e192" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_50_05" src="https://github.com/user-attachments/assets/974851de-b0c5-43cb-8d68-61d729d17382" />
+
