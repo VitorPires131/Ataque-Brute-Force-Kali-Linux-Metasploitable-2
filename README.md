@@ -63,7 +63,5 @@ e indo a aba Request ve os comandos que o site utiliza para realizar o login
 
 Criando Wordlists
 
-<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_30_36" src="https://github.com/user-attachments/assets/77ebc410-81ed-48fe-96df-8fd772be617a" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_29_55" src="https://github.com/user-attachments/assets/64f608cc-a27e-435d-b18d-1d48860374b2" />
-
-
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_30_36" src="https://github.com/user-attachments/assets/77ebc410-81ed-48fe-96df-8fd772be617a" />
