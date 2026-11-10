@@ -1,15 +1,12 @@
 Nessa atividade irei simular um ataque de intrusão utilizando os métodos, FTP, Web e SMB, utilizando o Kali Linux e o Metasploitable 2
 
 
+
 Reconhecimento e Descoberta de Possíveis Alvos Fáceis e vulnerareis
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_08_11_2026_18_04_38" src="https://github.com/user-attachments/assets/c03c863f-d1f1-4a3c-9ad3-2ea4ac99fe1c" />
 
 Aqui o atacante ao executar os comandos "ip a" e "nmap -sn 192.168.56.102/24" ele consegue ver quem esta conectado a mesma rede que ele e vê o ip do aparelho
-
-
-
-
 
 
 
@@ -21,17 +18,11 @@ Nessa etapa ao executar o comando "nmap -sV 192.168.56.101" o atacante analisa q
 
 
 
-
-
 Metodos para descobrir usuario e senha da vitima
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_11_27_00" src="https://github.com/user-attachments/assets/4c3a4fe1-d07c-4ddb-b1d9-aa286cfa4cf0" />
 
 Ao executar o comando ftp junto com o ip da vitima, o Atacante pode tentar o login da maquina da vitima utilizando sua propria maquina, sem precisar mexer na maquina da vitima.
-
-
-
-
 
 
 
@@ -42,10 +33,6 @@ Preparacão para usar o Medusa
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_11_32_26" src="https://github.com/user-attachments/assets/2eb3ffb5-f8f0-4c63-a53d-54501859cbc1" />
 
 Ao executar os comandos "echo -e "user\nmsfadmin\nadmin\nroot" > users.txt" e "echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt" o Atacante cria duas listas de usuário e senha para um ataque Força Bruta com FTP utilizando possíveis combinações que podem ser o login da maquina da vitima
-
-
-
-
 
 
 
