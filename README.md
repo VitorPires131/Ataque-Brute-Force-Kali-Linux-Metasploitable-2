@@ -25,4 +25,6 @@ Ao executar o comando ftp junto com o ip da vitima, o Atacante pode tentar o log
 
 
 
-
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_11_30_32" src="https://github.com/user-attachments/assets/9a83a4fc-8213-40ed-b33e-59b53f9ff290" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_11_32_26" src="https://github.com/user-attachments/assets/2eb3ffb5-f8f0-4c63-a53d-54501859cbc1" />
+<img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_11_32_10" src="https://github.com/user-attachments/assets/42500fdc-75d0-45ea-9534-e1cdcca6abbb" />
