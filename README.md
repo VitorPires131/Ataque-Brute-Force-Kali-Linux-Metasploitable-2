@@ -48,6 +48,9 @@ Ao executar o comando "medusa -h 192.168.56.101 -U users.txt -P pass.txt -M FTP 
 Podemos ver que o Atacante fez a conexão bem sucedida e se conectar no prompt do FTP da maquina da vitima.
 
 
+Nesse caso o melhor mecanismo de defesa a esse tipo de ataque é atualizando o sistema sempre ou se tiver outros e melhores sistemas de defesa desativar o FTP
+
+
 
 Ataque Web DVWA
 
@@ -66,7 +69,7 @@ Criando Wordlists
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_29_55" src="https://github.com/user-attachments/assets/64f608cc-a27e-435d-b18d-1d48860374b2" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_12_30_36" src="https://github.com/user-attachments/assets/77ebc410-81ed-48fe-96df-8fd772be617a" />
 
-Repetindo o que ja fizemos no FTP porem agora para Ataque Web
+Repetindo o que ja fizemos no FTP porem agora para Ataque Web.
 
 
 
@@ -82,9 +85,17 @@ Ao utilizar o comando.
 -m FORM:'username=^USER^7password=^PASS^7Login=Login' \
 -m 'FAIL=Login failed -t 6"
 o Medusa testa varias combinações de usario e senha e ao recer o Login failed o medusa reconhece que aquela combinação não é a correta até achar a que esta correta.
-Nota que ao descobrir o Medusa coloca em primeiro a cobinação correta e lista as outras combinações como "Sucessfull".
+Nota que ao descobrir o Medusa coloca em primeiro a combinação correta e lista as outras combinações como "Sucessfull".
 
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_14" src="https://github.com/user-attachments/assets/4257acf0-b5d9-4354-bc92-4d079cc4a5d2" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_32" src="https://github.com/user-attachments/assets/8e04e4db-053f-480d-ba33-9e39d2fb9e5b" />
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_13_19_42" src="https://github.com/user-attachments/assets/16189935-ddcc-4d34-a75b-e3448739f4bb" />
+
+E utilizando a combinação obtida pelo medusa o Atacante consegue o acesso
+
+Nesse caso o melhor mecanismo de defesa é sempre criar senhas fortes e muda-las regurlamente e ativar o método de segundo fator
+
+
+
+SMB com Enumeração de Usuarios
 
