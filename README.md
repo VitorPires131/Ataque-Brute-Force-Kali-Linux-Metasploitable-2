@@ -34,7 +34,7 @@ Preparacão para usar o Medusa
 
 Ao executar os comandos "echo -e "user\nmsfadmin\nadmin\nroot" > users.txt" e "echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt" o Atacante cria duas listas de usuário e senha para um ataque Força Bruta com FTP utilizando possíveis combinações que podem ser o login da maquina da vitima
 
-
+   
 
 Atacando com o Medusa
 
@@ -136,3 +136,5 @@ Testando o Acesso
 <img width="1920" height="955" alt="VirtualBox_Kali Linux_10_11_2026_16_06_41" src="https://github.com/user-attachments/assets/bf4b3407-d9fc-4b9b-892c-58affdfebf98" />
 
 e com o comando "smbclient -L //192.168.56.101 -U msf admin" e digitando a senha "msfadmin" o Atacante conseguiu com sucesso realizar o ataque, e tem livre acesso desde baixar ou fazer upload de arquivos a acessar todo o sistema.
+
+Para se proteger contra esse tipo de ataque, desativar suportes de smb antigos, restrição de acesso as portas smb, remover as listagens anônimas dos utilizadores e implementar políticas de bloquei de conta após certo números de tentativas e erros, são bons métodos de proteção e garante mais segurança ao sistema.
